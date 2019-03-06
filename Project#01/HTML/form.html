@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <title> CRUD basico em PHP - Cadastro </title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../_css/estilo.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!-- Inicio do Menu -->
+    <nav class="nav fixed-top" id="nav">
+        <section class="container">
+            <ul class="nav navbar">
+                <li><a href="index.html" id="letras">Menu</li>
+                <li><a href="cadastro.html" id="letras" class="btn">Cadastrar</a></li>
+                <li><a href="buscar.html" id="letras" class="btn">Buscar</a></li>
+                <li><a href="editar.html" id="letras" class="btn">Editar</a></li>
+                <li><a href="deletar.html" id="letras" class="btn">Deletar</a></li>
+                <li><a href="sobre.html" id="letras" class="btn">Sobre</a></li>
+            </ul>  
+        </section>
+    </nav>
+    <!-- Final do Menu -->
+
+    
+    <!-- Inicio do Form -->    
+    <div class="container">
+        <h1>CADASTRO</h1>
+        <hr id="hr" /> 
+            <form name="dados" method="post" action="cadastrando.php">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input name="nome" class="form-control" type="text" id="nome" placeholder="Nome"/>
+                </div> 
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" class="form-control" type="text" id="email" placeholder="Email"/>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input name="senha" class="form-control" type="password" id="senha" placeholder="Senha"/>  
+                </div>
+                
+                <div class="form-group">
+                    <label for="selecao">Qual o melhor?</label>
+                    <select name="opcao" class="form-control" id="opcao">
+                        <option>Selecionar</option>
+                        <option>PC</option>
+                        <option>XBOX ONE</option>
+                        <option>PS4</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comentario">Comentarios</label>
+                    <textarea name="comentario" class="form-control" id="comentario">
+                    </textarea>
+                </div>                
+                
+            <input class="btn btn-success btn" type="submit" value="Cadastrar">
+        </form>
+    </div>
+    <!-- Final do Form -->
+    
+    <!-- Inicio do Rodape -->
+    <footer id="final">
+            
+        <div class="btn" id="facebook">
+            <a href="https://www.facebook.com/hiago.pratesdasilva" >Facebook</a>
+        </div>
+
+        <div class="btn" id="instagram">
+            <a href="#" >Instagram</a>
+        </div>
+        
+        <div class="btn" id="github">
+            <a href="#" id="github">Git Hub</a>
+        </div>
+
+        <div class="btn" id="meunome">
+        <p> © 2019 Hiago Prates</p>
+        </div>
+    </footer>
+    <!-- Final do Rodape -->
+
+</body>
+
+</html>
